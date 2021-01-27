@@ -1,0 +1,66 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block contenido%}
+
+    <div class="contenedor_peliculas">
+            <h2 class="titulo_contenedor_pelicula">Libros semanales</h2>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/li01.jpg" alt="libro 1">
+                <br>
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/libro2.jpg" alt="libro 1">
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/li05.jpg" alt="libro 1">
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/libro04.jpg" alt="libro 1">
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/libro5.jpg" alt="libro 1">
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/li02.jpg" alt="libro 1">
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/li03.jpg" alt="libro 1">
+                <a href="#">Ver mas</a>
+            </div>
+            <div class="pelicula">
+                <img src="{% static 'core/'%}img/li04.jpg" alt="libro 1">
+                <a href="#">Ver mas</a>
+            </div>
+    </div>
+    <br>
+    <div class="contenedor_peliculas">
+                <h2 class="titulo_contenedor_pelicula">PRÓXIMOS LIBROS</h2>
+                <div class="pelicula">
+                    <img src="{% static 'core/'%}img/hp1.jpg" alt="libro 1">
+                    <a href="#">Ver mas</a>
+                </div>
+                <div class="pelicula">
+                    <img src="{% static 'core/'%}img/h2.jpg" alt="libro 2">
+                    <a href="#">Ver mas</a>
+                </div>
+                <div class="pelicula">
+                    <img src="{% static 'core/'%}img/juegos1.jpg" alt="libro 3">
+                    <a href="#">Ver mas</a>
+                </div>
+                <div class="pelicula">
+                    <img src="{% static 'core/'%}img/jj1.jpg" alt="libro 4">
+                    <a href="#">Ver mas</a>
+                </div>
+            </div>
+        
+    </div>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+
+<h2>Listado de libros</h2>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Autor</th>
+        <th>Año</th>
+        <th>Genero</th>
+        <th>Descripcion</th>
+        <th>Fecha de estreno</th>
+    </tr>
+    {% for p in libros %}
+    <tr>
+        <td>{{ p.nombre }}</td>
+        <td>{{ p.autor }}</td>
+        <td>{{ p.anio }}</td>
+        <td>{{ p.genero }}</td>
+        <td>{{ p.descripcion }}</td>
+        <td>{{ p.fecha_estreno }}</td>
+
+        <td>
+            <a href="{% url 'modificar_libro' p.id %}">Modificar</a>
+            <a href="{% url 'eliminar_libro' p.id %}">Eliminar</a>
+        </td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
